@@ -13,15 +13,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Single Price Grid Component</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -37,12 +28,12 @@
       };
     </script>
   </head>
-  <body class="flex justify-center items-center min-h-screen bg-lightGray">
+  <body class="relative flex flex-col justify-center items-center min-h-screen bg-lightGray">
     <main
-      class="md:grid grid-cols-2 max-w-[375px] md:max-w-[55%] lg:max-w-[46%] border"
+      class="my-10 md:grid grid-cols-2 shadow-xl max-w-[350px] md:max-w-[55%] lg:max-w-[46%] border"
     >
       <!-- 30 day hassle free... -->
-      <div class="p-5 md:p-10 col-span-2 bg-white">
+      <div class="p-6 md:p-10 col-span-2 bg-white">
         <h2 class="text-xl font-semibold text-sky-500 mb-3">
           Join our community
         </h2>
@@ -57,7 +48,7 @@
       </div>
 
       <!-- monthly subscription -->
-      <div class="p-5 md:p-10 bg-cyan text-white">
+      <div class="p-6 md:p-10 bg-cyan text-white">
         <h3 class="text-md font-semibold mb-3">Monthly Subscription</h3>
         <div class="flex items-center mb-2">
           <span class="text-3xl font-bold mr-3">&dollar;29</span
@@ -68,7 +59,7 @@
       </div>
 
       <!-- why us -->
-      <div class="p-5 md:p-10 bg-sky-500 text-white">
+      <div class="p-6 md:p-10 bg-sky-500 text-white">
         <h3 class="text-lg font-semibold mb-3">Why Us</h3>
         <p class="text-sm text-slate-300">
           Tutorials by industry experts Peer &amp; expert code review Coding
@@ -78,13 +69,13 @@
       </div>
     </main>
 
-    <!-- <footer>
-      <p class="attribution">
+    <footer class="bottom-0 absolute">
+      <p class="attribution text-sm">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a class="text-blue-700" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a class="text-blue-700" href="https://www.frontendmentor.io/profile/numan-iftikhar">Numan Iftikhar</a>.
       </p>
-    </footer> -->
+    </footer>
   </body>
 </html>
